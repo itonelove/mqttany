@@ -2,6 +2,9 @@
 
 ## Development
 
+* **Fixed**
+  * LED fix custom animations getting prefix `*` instead of actual module name. Fixes [#119](https://github.com/CrazyIvan359/mqttany/issues/119).
+
 ## 0.14.3
 
 * **Fixed**
