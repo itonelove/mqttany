@@ -1,0 +1,191 @@
+######## Configuration for MQTTany ########
+
+# All optional values are commented out and default values are shown
+
+
+
+### Config file version
+version: '1.0'
+
+
+######## MQTT Module ########
+mqtt:
+
+  ### Broker Host
+  # can be either IPv4 address or hostname
+  host: '192.168.1.220'
+
+  ### Broker Port
+  # port to connect to on the host
+  #port: 1883
+
+  ### Client ID
+  # Substitutions:
+  # - {hostname} = the computer's hostname
+  #client id: '{hostname}'
+
+  ### Login
+  #username:
+  #password:
+
+  ### Session Options
+  #qos: 0
+  #retain: false
+
+  ### Topics
+  # Substitutions:
+  # - {hostname} = the computer's hostname
+  # - {client_id} = the mqtt 'client id'
+  # topics are composed as `{root topic}/{node id}/{property id}`
+  #root topic: '{client_id}' # Root topic
+  # last will topic becomes `{root topic}/{lwt topic}`
+  #lwt topic: 'lwt' # Last Will topic
+
+  ### Heartbeat
+  # Interval in seconds to publish status messages
+  #heartbeat interval: 300
+
+
+######## GPIO Module ########
+gpio:
+
+  ### Pin Numbering Mode
+  #mode: 'SOC'
+
+  ### Polling Interval
+  polling interval: 1 # interval in seconds to poll all pins
+
+  ### Interrupt Debounce
+  #debounce: 50 # in milliseconds
+
+  ### Single Pin Configuration
+  pin0:
+    pin: 0
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin1:
+    pin: 1
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin2:
+    pin: 2
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin3:
+    pin: 3
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin6:
+    pin: 6
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin7:
+    pin: 7
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin10:
+    pin: 10
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin11:
+    pin: 11
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin12:
+    pin: 12
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin13:
+    pin: 13
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin14:
+    pin: 14
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin18:
+    pin: 18
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin19:
+    pin: 19
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin20:
+    pin: 20
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin21:
+    pin: 21
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin64:
+    pin: 64
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin65:
+    pin: 65
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin66:
+    pin: 66
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin67:
+    pin: 67
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin68:
+    pin: 68
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin71:
+    pin: 71
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin110:
+    pin: 110
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin198:
+    pin: 198
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin199:
+    pin: 199
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin200:
+    pin: 200
+    name: '{pin}'
+    pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
+  pin201:
+    pin: 201
+    name: '{pin}'
+    #pin mode: 'input' # can be 'input' or 'output'
+    #resistor: 'off' # can be 'pullup', 'pulldown', or 'off'
